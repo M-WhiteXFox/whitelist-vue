@@ -71,7 +71,7 @@ const verifyCode = async () => {
 
     // 备用IP获取接口
     const getIpFromBackupSource = () => {
-      return fetch('https://ipinfo.io/json')
+      return fetch('https://ipapi.co/json/')
           .then(response => response.json())
           .catch(error => {
             console.warn('备用IP获取接口也失败:', error)
